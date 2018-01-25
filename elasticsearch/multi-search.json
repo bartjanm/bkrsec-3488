@@ -1,0 +1,13 @@
+{
+    "query": {
+        "bool": {
+            "must": {
+                "bool" : { "should": [
+                      { "match": { "investigate.attacks" : "Tinba"}},
+                      { "match": { "investigate.attacks" : "Locky" }} ] 
+		}
+	    },		
+	    "must" : { "match" : { "sourceIpAddress" : "192.168.178.50" } }
+	}
+    }
+}

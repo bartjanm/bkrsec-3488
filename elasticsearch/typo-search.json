@@ -1,0 +1,9 @@
+{
+    "_source": ["uri.*","investigate.*"],
+    "query": {
+        "multi_match" : {
+            "query" : "scoda",
+            "fields" : ["_all"]
+       } 
+    }
+}
